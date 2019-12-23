@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on NoterBox</title>
+    <link>/features/</link>
+    <description>Recent content in Features on NoterBox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Apr 2017 16:42:03 +0100</lastBuildDate>
+    
+	<atom:link href="/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Capturing</title>
+      <link>/features/data-capturing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/data-capturing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attachments</title>
+      <link>/features/attachments/</link>
+      <pubDate>Mon, 10 Apr 2017 16:40:43 +0100</pubDate>
+      
+      <guid>/features/attachments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>/features/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reminders</title>
+      <link>/features/reminders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/reminders/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hashtags</title>
+      <link>/features/hashtags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/features/hashtags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Favorites</title>
+      <link>/features/favorites/</link>
+      <pubDate>Mon, 10 Apr 2017 16:41:40 +0100</pubDate>
+      
+      <guid>/features/favorites/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calendar view</title>
+      <link>/features/calendar-view/</link>
+      <pubDate>Mon, 10 Apr 2017 16:41:54 +0100</pubDate>
+      
+      <guid>/features/calendar-view/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import-export functions</title>
+      <link>/features/import-export/</link>
+      <pubDate>Mon, 10 Apr 2017 16:41:34 +0100</pubDate>
+      
+      <guid>/features/import-export/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>User dashboard</title>
+      <link>/features/user-dashboard/</link>
+      <pubDate>Mon, 10 Apr 2017 16:41:16 +0100</pubDate>
+      
+      <guid>/features/user-dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data backup</title>
+      <link>/features/data-backup/</link>
+      <pubDate>Mon, 10 Apr 2017 16:40:43 +0100</pubDate>
+      
+      <guid>/features/data-backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clear structure</title>
+      <link>/features/clear-structure/</link>
+      <pubDate>Mon, 10 Apr 2017 16:40:50 +0100</pubDate>
+      
+      <guid>/features/clear-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>/features/security/</link>
+      <pubDate>Mon, 10 Apr 2017 16:42:03 +0100</pubDate>
+      
+      <guid>/features/security/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

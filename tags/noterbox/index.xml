@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>noterbox on NoterBox</title>
+    <link>/tags/noterbox/</link>
+    <description>Recent content in noterbox on NoterBox</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Oct 2018 12:35:23 -0600</lastBuildDate>
+    
+	<atom:link href="/tags/noterbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why I am building NoterBox</title>
+      <link>/blog/why-i-am-building-noterbox/</link>
+      <pubDate>Fri, 19 Oct 2018 12:35:23 -0600</pubDate>
+      
+      <guid>/blog/why-i-am-building-noterbox/</guid>
+      <description>Hey, what&amp;rsquo;s up, I am Gabriel - and I am building NoterBox.
+  I have started working on NoterBox to solve a personal problem:
+I needed a long term secure solution to store and manage my personal data. And I needed to be able to easily capture new data from several sources, as well as search that data. In other words, a PIM for the 21st century.
+I need to know when exactly I have sent out that certificate for authentication (was it 4 or 6 weeks ago?</description>
+    </item>
+    
+    <item>
+      <title>What is NoterBox</title>
+      <link>/blog/what-is-noterbox/</link>
+      <pubDate>Fri, 19 Oct 2018 12:24:19 -0600</pubDate>
+      
+      <guid>/blog/what-is-noterbox/</guid>
+      <description>During lifetime, a lot of personal information gets misplaced or just lost. We are saving &amp;ldquo;some&amp;rdquo; of our information in several places - online or offline. In time, data becomes difficult to find &amp;amp; manage.
+What were you doing on March 14th of 2012? When was your last doctor appointment and where? How much have you spent on repairs for your car so far?
+The majority of people are not able to answer such questions.</description>
+    </item>
+    
+  </channel>
+</rss>

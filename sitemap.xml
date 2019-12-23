@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/features/data-capturing/</loc>
+  </url>
+  
+  <url>
+    <loc>/features/attachments/</loc>
+    <lastmod>2017-04-10T16:40:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/search/</loc>
+  </url>
+  
+  <url>
+    <loc>/features/reminders/</loc>
+  </url>
+  
+  <url>
+    <loc>/features/hashtags/</loc>
+  </url>
+  
+  <url>
+    <loc>/features/favorites/</loc>
+    <lastmod>2017-04-10T16:41:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/calendar-view/</loc>
+    <lastmod>2017-04-10T16:41:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/import-export/</loc>
+    <lastmod>2017-04-10T16:41:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/user-dashboard/</loc>
+    <lastmod>2017-04-10T16:41:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/data-backup/</loc>
+    <lastmod>2017-04-10T16:40:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/clear-structure/</loc>
+    <lastmod>2017-04-10T16:40:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/features/security/</loc>
+    <lastmod>2017-04-10T16:42:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/data-structure-in-the-context-of-a-decent-search-engine/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/why-i-am-building-noterbox/</loc>
+    <lastmod>2018-10-19T12:35:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/what-is-noterbox/</loc>
+    <lastmod>2018-10-19T12:24:19-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/attachments/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/data-structures/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/general/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hash-tags/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/notebooks/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/noterbox/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/notes/</loc>
+    <lastmod>2018-11-25T15:53:03-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/noterbox/</loc>
+    <lastmod>2018-10-19T12:35:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/why/</loc>
+    <lastmod>2018-10-19T12:35:23-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/what-is/</loc>
+    <lastmod>2018-10-19T12:24:19-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/features/</loc>
+    <lastmod>2017-04-10T16:42:03+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/deck/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/faq/</loc>
+  </url>
+  
+</urlset>

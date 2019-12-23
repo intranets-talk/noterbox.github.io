@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="generator" content="Hugo 0.56.3" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Data structure in the context of a decent search engine </title>
+
+  
+  <meta name="description" content="A simple look at structuring notes and notebooks in the context of a decent search engine and hash-tags"> 
+  
+  
+  
+  
+  
+
+  
+
+  <meta name="author" content="Gabriel">
+
+
+  <meta property="og:title" content="Data structure in the context of a decent search engine" />
+<meta property="og:description" content="A simple look at structuring notes and notebooks in the context of a decent search engine and hash-tags" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/data-structure-in-the-context-of-a-decent-search-engine/" />
+<meta property="article:published_time" content="2018-11-25T15:53:03-07:00" />
+<meta property="article:modified_time" content="2018-11-25T15:53:03-07:00" />
+
+  
+
+
+
+
+  
+  
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-127448422-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+  <link rel="canonical" href="/blog/data-structure-in-the-context-of-a-decent-search-engine/">  
+
+  <link rel="shortcut icon" type="image/png" href="/img/favicons/nb-fav.png">
+
+
+  <link href="/css/font.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
+  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
+  <link href="/css/master.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
+  <link href="/css/zoomjs/zoom.css" rel="stylesheet" type="text/css">
+  <link href="/css/lity/lity.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+
+
+
+  <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="/js/zoomjs/transition.js" type="text/javascript"></script>
+  <script src="/js/zoomjs/zoom.min.js" type="text/javascript"></script>
+  <script src="/js/shuffle-text/shuffletext.jquery.min.js" type="text/javascript"></script>
+  <script src="/js/lity/lity.min.js" type="text/javascript"></script>
+  <script src="/js/tocbot.min.js" type="text/javascript"></script>
+</head>
+
+
+<body class="page-kube">
+  <header> <div class="show-sm">
+    <div id="nav-toggle-box">
+      <div id="nav-toggle-brand">
+        <a href="/">NoterBox</a>
+      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+    </div>
+  </div>
+  <div class="hide-sm" id="top">
+    <div id="top-brand">
+      
+      <a href="/" title="NoterBox Home"><img alt="NoterBox" style = "with:34px;height:34px;" src="/img/logos/nb-full-logo.svg"></img></a>
+    </div>
+    <nav id="top-nav-extra">
+      <ul>
+        
+      </ul>
+    </nav>
+    <nav class="is-push-right" id="top-nav-main">
+      <ul>
+       
+       
+    <li><a href="/" >Home</a></li>
+    
+    <li><a href="/blog/" >Blog</a></li>
+    
+    <li><a href="/features/" >Features</a></li>
+    
+    <li><a href="/faq/" >Faq</a></li>
+    
+    <li><a href="/about/" >About</a></li>
+    
+      </ul>
+    </nav>
+
+  </div>
+ </header>
+  <main>
+<div class="push-center" itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="name" content="Data structure in the context of a decent search engine">
+<meta itemprop="description" content="A simple look at structuring notes and notebooks in the context of a decent search engine and hash-tags">
+
+
+<meta itemprop="datePublished" content="2018-11-25T15:53:03-07:00" />
+<meta itemprop="dateModified" content="2018-11-25T15:53:03-07:00" />
+<meta itemprop="wordCount" content="792">
+
+
+
+<meta itemprop="keywords" content="hash-tags,notes,notebooks,attachments," />
+
+<div id="hero">
+    <h1 itemprop="headline">  Data structure in the context of a decent search engine</h1>
+    
+<blockquote itemprop="description">A simple look at structuring notes and notebooks in the context of a decent search engine and hash-tags</blockquote>
+
+<time class="post-time"><span class="icon">
+  <i class="fa fa-clock-o" aria-hidden="true"></i>
+</span>
+<span>4 minute read</span>
+<span class="icon">
+ <i class="fa fa-pencil" aria-hidden="true"></i>
+</span>
+
+  Published: <time datetime="2018-11-25T15:53:03-07:00">25 Nov, 2018</time>
+
+</time>
+</div>
+<div id="post-box">
+<div id="post" itemprop="articleBody">
+
+    <p>To manage information, NoterBox offers a straight-forward notes-notebooks structure. There are notebooks, and each notebook can hold notes. Nothing simpler than that. And that is by design.</p>
+
+<figure>
+  <img data-action="zoom" class="b-lazy" data-src="/img/noterbox/nb-notebooks.png" src="/img/noterbox/nb-notebooks.png" alt="NoterBox Notebooks">
+</figure>
+
+<p>Back then when I started working on NoterBox, I was very much into having a  nested notebooks structure. Later on, as I made progress with the development and had a basic (full text database) search engine added, I&rsquo;ve quickly realized that I can basically find any stored info by simply searching (of course).</p>
+
+<p>Digging into notebooks and sub-sub-sub-notebooks to find data, was probably not the way to go. I know that this is highly debatable and I guess that there are many that would prefer the nested sort of data structure. My problem was that I also had to search attachments and attachments content (where possible). We&rsquo;ll talk about that later, below.</p>
+
+<p>So the nested notebooks structure&hellip;</p>
+
+<pre>
+  Personal Taxes <b>notebook</b>/
+  ├── 2014 <b>notebook</b>/
+  │   ├── turbotax <b>note</b>
+  │   └── return <b>note</b>
+  ├── 2015 <b>notebook</b>/
+  │   ├── turbotax <b>note</b>
+  │   └── return <b>note</b>
+  └── 2016 <b>notebook</b>/
+      ├── turbotax <b>note</b>
+      └── return <b>note</b>
+</pre>
+
+<p>&hellip; becomes a simple “notebook with notes” data structure:</p>
+
+<pre>
+  Personal Taxes <b>notebook</b>/
+  ├── 2014 <b>note</b>/
+  │   ├── turbotax <b>attachment</b>/
+  │   └── return <b>attachment</b>/
+  └── 2015 <b>note</b>/
+  │   ├── turbotax <b>attachment</b>/
+  │   └── return <b>attachment</b>/
+  └── 2016 <b>note</b>/
+      ├── turbotax <b>attachment</b>/
+      └── return <b>attachment</b>/
+</pre>
+
+<p>At this point, for me the decision was made: switch to a &ldquo;notebook with notes&rdquo; data structure, and start focusing on integrating a better search engine, as well as making it easier for the user to search an display results. What does that mean?</p>
+
+<ul>
+<li><p><strong>Search everything &amp; search by collections:</strong></p>
+
+<ul>
+<li>First, I wanted to be able to search everything, but also by collections. For example, only search within notes, notebooks or attachments.</li>
+</ul></li>
+
+<li><p><strong>Search operators</strong></p>
+
+<ul>
+<li>I needed to be able to find data using search operators. Like so: <code>attachments: &quot;foo&quot; -bar</code>. This and the above are both handled by Elasticsearch.</li>
+</ul></li>
+
+<li><p><strong>Suggestion engine</strong></p>
+
+<ul>
+<li>I also needed a suggestion engine, and the Typeahead.js / Bloodhound combination was perfect. That will filter results as you type your search. So before hitting Enter you already have a set of narrowed data returned which you can highlight and pick - at that stage. Neato.</li>
+</ul></li>
+
+<li><p><strong>Displaying results</strong></p>
+
+<ul>
+<li>At first I thought that this would be an easy one. It turned out not to be. I needed a view for everyting (all results, no matter the type) and than some additional separate views for only showing collections.</li>
+<li>While this worked, when put into practice and tested, seemed confusing and cluttered. After testing with different layouts, and putting myself in user&rsquo;s shoes, I&rsquo;ve settled for displaying collections only, with data that has most chances of being searched, displayed first. And that data is Notes.</li>
+<li>Secondly, I would have Notebooks and than Attachments displayed as separate collections. It&rsquo;s hard to take decisions as single user, but that&rsquo;s where I am right now and I have to move on.</li>
+</ul></li>
+
+<li><p><strong>Search inside attachments</strong></p>
+
+<ul>
+<li>Right now I am working on implementing search inside attachments. The results will also go in the Attachments collection. I am aware that not all attachments are searchable, but a lot of them are. From text files, documents, PDF&rsquo;s to images. So yes, I want that.</li>
+</ul></li>
+
+<li><p><strong>Hash-tags</strong></p>
+
+<ul>
+<li>Ok, stepped back and took a look. Something was still missing. I needed an additional way to interlink and group notes, besides Notebooks.</li>
+<li>I have decided to go with hash-tags - that would fit the bill. You can create hash-tags on the fly  in any note, and that will inter-link notes across different notebooks.</li>
+</ul></li>
+</ul>
+
+<p><figure>
+    <img data-action="zoom" class="b-lazy" data-src="/img/noterbox/nb-hashtag.png" src="/img/noterbox/nb-hashtag.png" alt="NoterBox Hashtag">
+  </figure></p>
+
+<ul>
+<li>The hash-tags view will give you a global outlook of your existing hash-tags. Hash-tags are also click-able and searchable.</li>
+</ul>
+
+<p>Need to find the needle in the haystack? Knock yourself out.. 😎 By all means - this is not the end, but a starting point. Like mentioned, from a user&rsquo;s standpoint of view, this approach may not be for everyone - but I believe it may work for majority. In terms of usage, the sort of functionality I am targeting here is:</p>
+
+<blockquote>
+<p>If you&rsquo;re an organized person, that&rsquo;s good. If not, that&rsquo;s fine too. Just throw information in NoterBox. You&rsquo;ll still find your data easily.</p>
+</blockquote>
+
+<p>I am taking a wild guess here, you have to start somewhere. I will be looking forward to receiving feedback from beta users.</p>
+
+<p>NoterBox it&rsquo;s not yet a finished product, and at this stage, nothing is &ldquo;written in stone&rdquo;. I would love to hear your opinion on structuring Notes &amp; Notebooks in the context of a search engine and hash-tags. You can give me a shout on Twitter at <a href="https://twitter.com/NoterBox" target="_blank">@NoterBox</a></p>
+
+<p>Come work with us. NoterBox is currently looking for a <a href="https://angel.co/noterbox/jobs/455220-co-founder" target="_blank">Technical Co-founder</a>. Also, you can subscribe below for a notification when NoterBox will be available.</p>
+
+
+</div>
+
+<div id="get-notified" class="form-subscribe">
+    <div id="form-subscribe-success" style="display: none;"></div>
+<div id="form-subscribe-box">
+        <h4>Subscribe to our mailing list</h4>
+        <p>Get notified when NoterBox becomes available</p>
+
+        
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          #mc_embed_signup .button { background-color:#1c86f2; }
+        </style>
+        <div id="mc_embed_signup">
+        <form action="https://noterbox.us19.list-manage.com/subscribe/post?u=0b59f16f3a1156ff3f4cbba73&amp;id=f0da23ef1c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+
+        <div class="mc-field-group">
+        	<label for="mce-EMAIL">Email Address </label>
+        	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group">
+        	<label for="mce-FNAME">First Name </label>
+        	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+        </div>
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>    
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0b59f16f3a1156ff3f4cbba73_f0da23ef1c" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        
+
+        <div class="form-subscribe-twitter"><div>or</div> <a href="https://twitter.com/noterbox">Follow NoterBox on Twitter</a></div>
+    </div>
+</div>
+
+    <div class="">
+        <p>
+  Published
+  
+    
+      by <span itemprop="author">Gabriel</span>
+    
+  
+  <time datetime="2018-11-25T15:53:03-07:00">
+    25 Nov, 2018
+  </time>
+  
+    in <span itemprop="articleSection"><a href="/categories/data-structures/">data-structures</a>, <a href="/categories/general/">general</a> and <a href="/categories/noterbox/">noterbox</a></span>
+  
+  
+    and tagged <a href="/tags/attachments/">attachments</a>, <a href="/tags/hash-tags/">hash-tags</a>, <a href="/tags/notebooks/">notebooks</a> and <a href="/tags/notes/">notes</a>
+  
+  using <span itemprop="wordCount">792</span> words.
+</p>
+
+        
+
+
+
+    </div>
+
+    
+
+</div>
+</div>
+</main>
+  <footer>   <footer id="footer">
+    <nav>
+      <ul>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <li>
+          <a href="/features/">Features</a>
+        </li>
+        <li>
+          <a href="/faq/">FAQ</a>
+        </li>
+        <li>
+          <a href="/about/">About</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/noterbox">NoterBox on Twitter</a>
+        </li>
+      </ul>
+    </nav>
+    <p>&copy; NoterBox</p>
+  </footer>
+ </footer>
+
+  <script src="/js/kube.js" type="text/javascript"></script>
+  <script src="/js/kube.legenda.js" type="text/javascript"></script>
+  <script src="/js/master.js" type="text/javascript"></script>
+  <script src="/js/blazy/blazy.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  var bLazy = new Blazy();
+  var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
+  $K.init();
+</script>
+
+<div class="scroll-back-to-top-wrapper">
+	<span class="scroll-back-to-top-inner">
+    <i class="fas fa-arrow-circle-up fa-2x"></i>
+	</span>
+</div>
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.noterbox.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+</body>
+
+</html>
